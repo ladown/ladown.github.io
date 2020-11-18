@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Web-разработка сайтов by ЕЕЕ</title>
+    <meta name="title" content="Web-разработка сайтов by ЕЕЕ" />
+    <meta
+      name="description"
+      content="Я, Ермилов Егор, web-разработчик, создам для Вас уникальный сайт с удобным функционалом."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ermilovee.ru" />
+    <meta property="og:title" content="Web-разработка сайтов by ЕЕЕ" />
+    <meta
+      property="og:description"
+      content="Я, Ермилов Егор, web-разработчик, создам для Вас уникальный сайт с удобным функционалом."
+    />
+    <meta property="og:image" content="img/meta_photo.jpg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ermilovee.ru" />
+    <meta property="twitter:title" content="Web-разработка сайтов by ЕЕЕ" />
+    <meta
+      property="twitter:description"
+      content="Я, Ермилов Егор, web-разработчик, создам для Вас уникальный сайт с удобным функционалом."
+    />
+    <meta property="twitter:image" content="img/meta_photo.jpg" />
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/Favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/Favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/Favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/Favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/Favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/Favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/Favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/Favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/Favicon/apple-icon-180x180.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="icons/Favicon/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/Favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/Favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/Favicon/favicon-16x16.png" />
+    <link rel="manifest" href="icons/Favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="icons/Favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <aside class="sidepanel hide">
+      <a href="https://vk.com/ladown1337" class="sidepanel__link__vk" target="_blank"
+        ><img src="icons/social/vk.svg" alt="vk" class="sidepanel__img_vk" /></a
+      ><a href="https://www.instagram.com/ladown1337/" class="sidepanel__link" target="_blank"
+        ><img src="icons/social/instagram.svg" alt="instagram" class="sidepanel__img" /></a
+      ><a href="https://github.com/ladown?tab=repositories" class="sidepanel__link" target="_blank"
+        ><img src="icons/social/github.svg" alt="github" class="sidepanel__img"
+      /></a>
+      <div class="sidepanel__divider"></div>
+      <div class="sidepanel__text"><span>Социальные сети</span></div>
+    </aside>
+    <div class="menu">
+      <div class="menu__block">
+        <div class="menu__close"><img src="icons/Close.svg" alt="close" /></div>
+        <nav>
+          <ul class="menu__list">
+            <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
+            <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
+            <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+            <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+            <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
+            <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+        <div class="menu__social">
+          <a href="https://github.com/ladown?tab=repositories" target="_blank"
+            ><img src="icons/social/Github_vert.svg" alt="Github" /></a
+          ><a href="https://www.instagram.com/ladown1337/" target="_blank"
+            ><img src="icons/social/Instagram_vert.svg" alt="instagram" /></a
+          ><a href="https://vk.com/ladown1337" target="_blank"
+            ><img src="icons/social/vk.svg" alt="vk"
+          /></a>
+        </div>
+      </div>
+      <div class="menu__overlay"></div>
+    </div>
+    <section class="promo" id="up">
+      <div class="hamburger"><span></span> <span class="long"></span> <span></span></div>
+      <div class="container">
+        <div class="title title_fz16 title_fz16-white promo__subtitle">Меня зовут Егор Ермилов</div>
+        <h1 class="title title_fz48 title_fz48-white promo__title">
+          Я web-разработчик из города Москва
+        </h1>
+        <div class="promo__btns">
+          <a href="#portfolio" class="promo__link btn btn-main">Портфолио</a>
+          <a href="#about" class="promo__link btn-submain">Про меня</a>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__wrapper">
+          <div class="about__photo"><img src="img/my_photo.jpg" alt="photo" /></div>
+          <div class="about__descr">
+            <h2 class="title title_fz16 about__title">Про меня</h2>
+            <div class="title title_fz36 about__subtitle">Меня зовут Егор</div>
+            <div class="divider"></div>
+            <p class="about__text">
+              Доброго времени суток! Я рад, что именно Вы зашли на сайт моего портфолио. Давайте
+              знакомиться. Меня зовут Егор. Еще в 9 классе я начал писать маленькие программки на
+              pascale. Сейчас занимаюсь web-разработкой. Я нахожу этот процесс очень интересным и
+              увлекательным, поэтому планирую дальше расти и развиваться в данной сфере. Я очень
+              ответственный и надежный человек. Обратившись ко мне, Вы получите уникальный сайт,
+              который будет удобен в использовании не только для Вас, но и для Ваших клиентов. Также
+              хочу сказать, что обратная связь Вас приятно удивит: в случае возникновения каких-либо
+              вопросов или предложений Вы сможете легко и быстро связаться со мной.
+            </p>
+          </div>
+          <div class="about__skills">
+            <div class="about__skills-item">
+              <div class="about__skills-circle">
+                <img
+                  src="icons/about_me/web_development.svg"
+                  alt="web_development"
+                  class="about__img"
+                />
+              </div>
+              <div>
+                <div class="title title_fz14">Web-разработка</div>
+                <div class="about__skills-text">
+                  Занимаюсь web-разработкой с июня 2020 года. Прохожу различные курсы и читаю книги.
+                  В своей работе стараюсь избегать технологий, которые ухудшают работу сайта.
+                </div>
+              </div>
+            </div>
+            <!-- <div class="about__skills-item">
+                        <div class="about__skills-circle">
+                            <img src="icons/about_me/mobile_dev.svg" alt="mobile_dev" class="about__img">
+                        </div>
+                        <div>
+                            <div class="title title_fz14">Разработка приложений</div>
+                            <div class="about__skills-text">
+                                Описание опыта в разработке приложений
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__skills-item">
+                        <div class="about__skills-circle">
+                            <img src="icons/about_me/design.svg" alt="" class="about__img">
+                        </div>
+                        <div>
+                            <div class="title title_fz14">UI/UX Design</div>
+                            <div class="about__skills-text">
+                                Описание опыта в дизайне
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </div>
+                    </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="resume" id="resume">
+      <div class="container">
+        <h2 class="title title_fz16 title__section-title">Опыт</h2>
+        <div class="title title_fz36 title__section-subtitle">Чем я буду полезен</div>
+        <div class="divider"></div>
+        <div class="resume__wrapper">
+          <div class="resume__column">
+            <h3 class="title title_fz20 resume__column-title">Образование</h3>
+            <ul>
+              <li>
+                <div class="resume__item">
+                  <div class="resume__item-head">
+                    <div class="resume__item-icon">
+                      <img src="icons/experience/university.svg" alt="university" />
+                    </div>
+                    <h4 class="title title_fz14">НИУ "МЭИ"</h4>
+                    <div class="resume__item-location">Обучаюсь на втором курсе</div>
+                  </div>
+                  <div class="resume__item-body">
+                    В данный момент обучаюсь в НИУ "МЭИ", на направлении "Менеджмент"
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="resume__item">
+                  <div class="resume__item-head">
+                    <div class="resume__item-icon">
+                      <img src="icons/experience/courses.svg" alt="courses" />
+                    </div>
+                    <h4 class="title title_fz14">Udemy</h4>
+                    <div class="resume__item-location">Курсы по Web-разработке</div>
+                  </div>
+                  <div class="resume__item-body">
+                    Паралельно с основным обучением занимаюсь самообучнием в области
+                    программирования. Прошел полностью курс по Web-разработке. Получил
+                    <a href="WD.pdf" target="_blank">сертификат.</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="resume__column">
+            <h3 class="title title_fz20 resume__column-title">Опыт работы</h3>
+            <ul>
+              <li>
+                <div class="resume__item">
+                  <div class="resume__item-head">
+                    <div class="resume__item-icon">
+                      <img src="icons/experience/developer.svg" alt="developer" />
+                    </div>
+                    <h4 class="title title_fz14">Front-End Developer</h4>
+                    <div class="resume__item-location">С июня 2020 года</div>
+                  </div>
+                  <div class="resume__item-body">
+                    Занимаюсь front-end разработкой различных сайтов.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <!-- <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/designer.svg" alt="designer">
+                                    </div>
+                                    <h4 class="title title_fz14">UI/UX Designer</h4>
+                                    <div class="resume__item-location">Squad Team | Москва (2018)</div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                </div>
+                            </div> -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="title title_fz16 title__section-title">Навыки</h2>
+        <div class="title title_fz36 title__section-subtitle">Что я использую в работе</div>
+        <div class="divider"></div>
+        <div class="skills__wrapper">
+          <div class="skills__item">
+            <div class="skills__item-img">
+              <img src="icons/skills/html5.svg" alt="html5" class="skills__img" />
+            </div>
+            <h4 class="skills__header">HTML5</h4>
+            <div class="skills__descr">
+              Именно данная технология позволяет создавать каркас вашего сайта или приложения, а
+              последняя версия поможет мне сделать более SEO-оптимизированную структуру вашего
+              продукта.
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__item-img">
+              <img src="icons/skills/css3.svg" alt="css3" class="skills__img" />
+            </div>
+            <h4 class="skills__header">CSS3</h4>
+            <div class="skills__descr">
+              Этот язык стилей даёт мне возможность создать абсолютно любой внешний вид вашего сайта
+              или приложения. Все ограничивается только вашей фантазией!
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__item-img">
+              <img src="icons/skills/js.svg" alt="js" class="skills__img" />
+            </div>
+            <h4 class="skills__header">Java Script</h4>
+            <div class="skills__descr">
+              Этот язык программирования позволяет оживить все что угодно: слайдеры, окна,
+              подсказки, вкладки, получение данных от сервера и многое другое.
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__item-img">
+              <img src="icons/skills/react.svg" alt="react" class="skills__img" />
+            </div>
+            <h4 class="skills__header">React</h4>
+            <div class="skills__descr">Эта библиотека позволяет создавать web-приложения.</div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__item-img">
+              <img src="icons/skills/node.js.svg" alt="Node.js" class="skills__img" />
+            </div>
+            <h4 class="skills__header">Node.js</h4>
+            <div class="skills__descr">
+              В дальнейшем планирую заняться обучением данной технологии, позволяющей создавать
+              бэкенд для вашего продукта - «мозги», выполняющие действия скрытые от взгляда
+              пользователя.
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__item-img">
+              <img src="icons/skills/mongo.db.svg" alt="" class="skills__img" />
+            </div>
+            <h4 class="skills__header">Mongo.db</h4>
+            <div class="skills__descr">
+              В дальнейшем планирую заняться обучением технологии, хранящей данные вашего сайта или
+              приложения.
+            </div>
+          </div>
+        </div>
+        <div class="skills__ratings">
+          <div class="skills__ratings-item">
+            <div class="title title_fz14 skills__ratings-title">Создание сайтов</div>
+            <div class="skills__ratings-counter">85%</div>
+            <div class="skills__ratings-line"><span></span></div>
+          </div>
+          <!-- <div class="skills__ratings-item">
+                    <div class="title title_fz14 skills__ratings-title">Создание приложений</div>
+                    <div class="skills__ratings-counter">85%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item">
+                    <div class="title title_fz14 skills__ratings-title">Работа с данными</div>
+                    <div class="skills__ratings-counter">90%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div> -->
+          <div class="skills__ratings-item">
+            <div class="title title_fz14 skills__ratings-title">Креативность</div>
+            <div class="skills__ratings-counter">75%</div>
+            <div class="skills__ratings-line"><span></span></div>
+          </div>
+          <div class="skills__ratings-item">
+            <div class="title title_fz14 skills__ratings-title">Создание дизайна</div>
+            <div class="skills__ratings-counter">80%</div>
+            <div class="skills__ratings-line"><span></span></div>
+          </div>
+          <div class="skills__ratings-item">
+            <div class="title title_fz14 skills__ratings-title">Soft skills</div>
+            <div class="skills__ratings-counter">85%</div>
+            <div class="skills__ratings-line"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="title title_fz16 title__section-title">Портфолио</h2>
+        <div class="title title_fz36 title__section-subtitle">Мои работы</div>
+        <div class="divider"></div>
+        <div class="portfolio__wrapper">
+          <a href="https://www.uber.ermilovee.ru" class="portfolio__item" target="_blank"
+            ><img src="img/works/uber.jpg" alt="uber" class="portfolio__img"
+          /></a>
+          <a href="https://www.pulse.ermilovee.ru" class="portfolio__item" target="_blank"
+            ><img src="img/works/pulse.jpg" alt="pulse" class="portfolio__img"
+          /></a>
+          <a
+            href="https://second-react-app-pizza.herokuapp.com"
+            class="portfolio__item"
+            target="_blank"
+            ><img src="icons/pizza-logo.png" alt="WP" class="portfolio__img" /></a
+          ><a class="portfolio__item vertical development_process"
+            ><img src="img/works/plans.jpg" alt="test" class="portfolio__img" /></a
+          ><a class="portfolio__item development_process"
+            ><img src="img/works/bread.jpg" alt="test" class="portfolio__img" /></a
+          ><a class="portfolio__item horizonal development_process"
+            ><img src="img/works/mac.jpg" alt="test" class="portfolio__img"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section class="price" id="price">
+      <div class="container">
+        <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
+        <div class="divider"></div>
+        <div class="price__wrapper">
+          <div class="price__item">
+            <div class="price__title">Landing-page</div>
+            <div class="price__count">от 2000 руб.</div>
+            <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>
+          </div>
+          <div class="price__item">
+            <div class="price__title">Корпоративный сайт</div>
+            <div class="price__count">Индивидуально</div>
+            <div class="price__descr">Сайт для вашего бизнеса или компании</div>
+          </div>
+          <!-- <div class="price__item">
+                    <div class="price__title">Интернет-магазин</div>
+                    <div class="price__count">от 30000 руб.</div>
+                    <div class="price__descr">
+                        Инструмент для ваших продаж в сети
+                </div>
+                </div>
+                    <div class="price__item">
+                        <div class="price__title">Web-приложение</div>
+                        <div class="price__count">от 28000 руб.</div>
+                        <div class="price__descr">
+                            Приложение внутри браузера для лучшего комфорта
+                        </div>
+                </div>
+                    <div class="price__item">
+                        <div class="price__title">Android/IOS Приложение</div>
+                        <div class="price__count">от 25000 руб.</div>
+                        <div class="price__descr">
+                            Приложение для смартфона любой ОС
+                        </div>
+                </div> -->
+          <div class="price__item">
+            <div class="price__title">Дизайн</div>
+            <div class="price__count">Индивидуально</div>
+            <div class="price__descr">Создам дизайн для вашего сайта/приложения...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__wrapper">
+          <div class="contacts__photo"><img src="img/my_photo.jpg" alt="photo" /></div>
+          <div class="contacts__descr">
+            <h2 class="title title_fz16 contacts__title">Контакты</h2>
+            <div class="title title_fz36 contacts__subtitle">Свяжитесь со мной</div>
+            <div class="divider"></div>
+            <div class="title title_fz14 contacts__text">Любым удобным для вас способом:</div>
+            <div class="contacts__social">
+              <a href="https://vk.com/ladown1337" class="contacts__link" target="_blank"
+                ><img src="icons/social/vk.svg" alt="vk" /> </a
+              ><a href="https://t.me/Ladown" class="contacts__link" target="_blank"
+                ><img src="icons/social/telegram.svg" alt="telegram" /> </a
+              ><a
+                href="https://www.instagram.com/ladown1337/"
+                class="contacts__link"
+                target="_blank"
+                ><img src="icons/social/Instagram_vert.svg" alt="Instagram"
+              /></a>
+            </div>
+            <div class="title title_fz14 contacts__text">
+              Или оставьте ваши данные и я сам вам напишу:
+            </div>
+            <form action="mail.php" method="POST" class="contacts__form">
+              <div class="contacts__input">
+                <input name="name" type="text" id="name" /> <label for="name">Ваше имя</label>
+              </div>
+              <div class="contacts__input">
+                <input name="email" type="email" id="email" required />
+                <label for="email">Ваша почта</label>
+              </div>
+              <div class="contacts__textarea">
+                <textarea name="text" id="text"></textarea> <label for="text">Ваше сообщение</label>
+              </div>
+              <div class="contacts__triggers">
+                <button class="contacts__btn btn">Отправить сообщение</button>
+                <div class="contacts__privacy">
+                  <input type="checkbox" required />
+                  <span
+                    >Я согласен(а) с
+                    <a href="/policy.html" target="_blank">политикой конфиденциальности</a></span
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="link hide">
+      <a href="#up" class="link__up"><img src="icons/up.svg" alt="up" /></a>
+    </div>
+    <div class="modal__area hide">
+      <div class="overlay">
+        <div class="modal">
+          <img src="icons/Close.svg" alt="close" class="modal__img" />
+          <h5 class="title title_fz36 contacts__subtitle">Извините!</h5>
+          <p>Данная работа находиться в разработке!</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal__area-contacts hide">
+      <div class="overlay">
+        <div class="modal">
+          <img src="icons/Close.svg" alt="close" class="modal__img-contacts" />
+          <h5 class="title title_fz36 contacts__subtitle">Спасибо за оставленную заявку!</h5>
+          <p>В скором времени я с Вами свяжусь!</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
