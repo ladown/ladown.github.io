@@ -1642,36 +1642,41 @@ window.addEventListener("DOMContentLoaded", function () {
   document.addEventListener('scroll', showItemsByScroll);
 
   function showItemsByScroll() {
-    console.log(123);
-
-    if (window.pageYOffset >= 1000) {
+    if (window.pageYOffset >= 750) {
       iconUp.classList.remove("hide");
       asidePanel.classList.remove("hide");
-    } else if (window.pageYOffset <= 1000) {
+    } else if (window.pageYOffset <= 750) {
       iconUp.classList.add("hide");
       asidePanel.classList.add("hide");
     }
   } //Portfolio undone works
 
 
-  var corkItem = document.querySelectorAll(".development_process");
+  var corkItem = document.querySelector(".development_process");
   var modalArea = document.querySelector(".modal__area");
   var modalClose = document.querySelector(".modal__img");
 
-  function modalOpenClose() {
-    corkItem.forEach(function (item, i) {
-      item.addEventListener('click', function () {
-        modalArea.classList.remove("hide");
-        modalArea.classList.add("active");
-      });
+  function modal() {
+    corkItem.addEventListener('click', function () {
+      modalArea.classList.remove("hide");
+      modalArea.classList.add("active");
+      document.body.style.overflow = 'hidden';
+    });
+    modalArea.addEventListener('click', function (event) {
+      if (event.target.classList.contains('overlay')) {
+        modalArea.classList.remove("active");
+        modalArea.classList.add("hide");
+        document.body.style.overflow = '';
+      }
     });
     modalClose.addEventListener('click', function () {
       modalArea.classList.remove("active");
       modalArea.classList.add("hide");
+      document.body.style.overflow = '';
     });
   }
 
-  modalOpenClose(); // Form
+  modal(); // Form
 
   var inputName = document.querySelector("#name");
   var email = document.querySelector("#email");
