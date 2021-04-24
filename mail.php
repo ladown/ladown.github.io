@@ -17,4 +17,3 @@ mail($my_email, $subject, $mess, $headers);
 
 header('Location: /');
 exit();
-?>
